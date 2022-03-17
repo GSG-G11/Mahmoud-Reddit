@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reddit</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assests/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="#">
+        <img src="../assests/reddit-logo.png" alt="reddit-logo" class="logo"
+      /></a>
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" class="search" placeholder="Search Reddit" />
+      </div>
+      <div class="register">
+        <button class="logout">log out</button>
+        <a href="./profile" class="go-profile"
+          ><i class="fa-solid fa-user"></i
+        ></a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="insert-post">
+        <form id="post-form">
+          <img class="reddit-logo" src="../assests/userlogo.png" alt="logo" />
+          <input
+            class="post-input"
+            type="text"
+            placeholder="Create Post"
+            required
+          />
+          <input
+            class="img-input"
+            type="url"
+            placeholder="Add  URL "
+            required
+          />
+          <button class="post-btn">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </section>
+
+      <section class="popular-posts">
+        <div class="posts">
+          <div class="head">
+            <div class="item item-color">
+              <i class="fa-brands fa-hotjar"></i><span>hot</span>
+            </div>
+            <div class="item item-color">
+              <span>Everywhere<i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-sun"></i><span>New</span>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-angle-up"></i><span>Top</span>
+            </div>
+          </div>
+
+          <div class="post-container">
+           
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../js/renderPostHome.js"></script>
+  </body>
+</html>

@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;0,600;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: #dae0e6;
+}
+nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  height: 35px;
+}
+
+.search-container {
+  background-color: #f6f7f8;
+
+  height: 40px;
+  border-radius: 10px;
+  width: 40%;
+}
+.search {
+  height: 100%;
+  width: 90%;
+  outline: none;
+  border: none;
+  background-color: #f6f7f8;
+}
+
+.fa-solid {
+  padding: 5px;
+  color: grey;
+}
+.search-container:hover {
+  background-color: white;
+  border: 1px solid blue;
+}
+
+.search:hover {
+  background-color: white;
+}
+
+.login {
+  display: inline-block;
+  margin: 5px;
+  width: 120px;
+  height: 40px;
+  background-color: white;
+  color: #1384d7;
+  border: 1px solid #1384d7;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.login:hover {
+  background-color: #eaf0f5;
+}
+.signup {
+  display: inline-block;
+  margin: 5px;
+  width: 120px;
+  height: 40px;
+  background-color: #1384d7;
+  color: white;
+  border-radius: 20px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.signup:hover {
+  background-color: #348fcf;
+}
+
+.trend {
+  margin: 10px;
+}
+.card-1 {
+  height: 180px;
+  width: 225px;
+
+  background-image: url(../assests/cardBg.jpeg);
+  background-size: cover;
+  color: #ffff;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card-2 {
+  height: 180px;
+  width: 225px;
+
+  background-image: url(../assests/zelenskyy-ap-01.webp);
+  background-size: cover;
+  color: #ffff;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card-3 {
+  height: 180px;
+  width: 225px;
+
+  background-image: url(../assests/trump.jpeg);
+  background-size: cover;
+  color: #ffff;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card-4 {
+  height: 180px;
+  width: 225px;
+
+  background-image: url(../assests/AMSTERDAM.jpeg);
+  background-size: cover;
+  color: #ffff;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+main {
+  width: 80%;
+  height: 90vh;
+  margin: auto;
+}
+
+.posts {
+  width: 60%;
+}
+
+.head {
+  background-color: #ffff;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+}
+span {
+  padding: 5px;
+}
+.title {
+  margin: 10px;
+}
+.item {
+  cursor: pointer;
+}
+.item:hover {
+  border-radius: 10px;
+  background-color: #ededed;
+}
+
+.item-color {
+  color: #1384d7;
+}
+
+.post-container {
+  display: flex;
+ 
+  flex-direction: column-reverse;
+  margin: 10px 0px;
+}
+
+.post-card{
+  display: flex;
+  background-color: #fff;
+  margin-top: 10px;
+
+}
+.post{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.votes {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  width: 10%;
+}
+.up {
+  border: none;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.down {
+  border: none;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  font-size: 20px;
+}
+.count {
+  font-size: 15px;
+}
+
+.post-content {
+  margin: 5px;
+}
+
+.post-img {
+  width: 80%;
+  height: 200px;
+  margin: 10px;
+  align-self: center;
+
+}
+
+.user {
+  display: flex;
+
+  align-items: center;
+  width: 100%;
+  margin: 4px;
+}
+.user-img {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+
+.time {
+  font-size: 14px;
+  color: #c0c1c2;
+}
+
+/* sign up css */
+
+.forms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.error-msg {
+  text-align: center;
+  color: red;
+}
+
+.signup-container {
+  display: flex;
+  height: 650px;
+  width: 600px;
+  background-color: #ffff;
+}
+
+.signup-img {
+  width: 15%;
+  background-image: url(../assests/signBG.jpg);
+  background-size: cover;
+}
+
+.signup-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.fa-solid {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.signup-para {
+  font-size: 15px;
+  text-align: center;
+}
+
+.signUp-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sign-input {
+  height: 50px;
+  width: 280px;
+  outline: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.sign-input:hover {
+  border: 1px solid #1384d7;
+}
+
+.input-btn {
+  margin: 10px;
+  height: 50px;
+  width: 280px;
+  color: #ffff;
+  background-color: #1384d7;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.input-btn:hover {
+  background-color: #348fcf;
+}
+
+/* log in  */
+
+.login-container {
+  display: flex;
+  height: 650px;
+  width: 600px;
+  background-color: #ffff;
+}
+
+.login-img {
+  width: 15%;
+  background-image: url(../assests/signBG.jpg);
+  background-size: cover;
+}
+
+.login-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.fa-solid {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.login-para {
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 400px;
+}
+
+.login-input {
+  height: 50px;
+  width: 280px;
+  outline: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.login-input:hover {
+  border: 1px solid #1384d7;
+}
+
+.login-btn {
+  margin: 10px;
+  height: 50px;
+  width: 280px;
+  color: #ffff;
+  background-color: #1384d7;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #348fcf;
+}
+
+/* home */
+
+.logout {
+  margin: 5px;
+  width: 120px;
+  height: 40px;
+  background-color: white;
+  color: #1384d7;
+  border: 1px solid #1384d7;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background-color: rgb(235, 157, 157);
+}
+
+.go-profile {
+  background-color: white;
+
+  border: none;
+}
+
+.go-profile:hover {
+  background-color: #ededed;
+  border-radius: 15px;
+}
+
+.insert-post {
+  background-color: #ffff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 60px;
+  width: 60%;
+}
+
+#post-form {
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.reddit-logo {
+  height: 40px;
+  width: 40px;
+}
+
+.post-input {
+  height: 30px;
+  width: 230px;
+  outline: none;
+  padding: 10px;
+}
+.img-input {
+  height: 30px;
+  width: 230px;
+  outline: none;
+  padding: 10px;
+}
+
+.post-btn {
+  background-color: #ffff;
+  border: none;
+}
+
+.post-input:hover {
+  border: 1px solid #1384d7;
+  border-radius: 5px;
+}
+
+.img-input:hover {
+  border: 1px solid #1384d7;
+  border-radius: 5px;
+}

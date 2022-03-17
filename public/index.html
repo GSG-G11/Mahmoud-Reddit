@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reddit</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assests/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="#">
+        <img src="./assests/reddit-logo.png" alt="reddit-logo" class="logo"
+      /></a>
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" class="search" placeholder="Search Reddit" />
+      </div>
+      <div class="register">
+        <a href="/login" class="login">log In</a>
+        <a href="/signup" class="signup">sign Up</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="trend-today">
+        <h3 class="trend">Trending today</h3>
+        <div class="card-container">
+          <div class="card-1">
+            <h2>Belarus</h2>
+            <p>
+              Belarus appoints Russian commanders to force participate in a war
+            </p>
+          </div>
+          <div class="card-2">
+            <h2>Ivan Fedorov</h2>
+            <p>
+              Ukrainian President Zelensky confirms that Ukrainian forces managed to extract  Melitopol
+
+            </p>
+          </div>
+          <div class="card-3">
+            <h2>Donald Trump</h2>
+            <p>
+              Trump cuts ties with Pence and rules him out as 2024 running mate
+            </p>
+          </div>
+          <div class="card-4">
+            <h2>World Court </h2>
+            <p>
+              World Court orders Russia to cease military operations in Ukraine
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular-posts">
+        <h3 class="title">Popular Posts</h3>
+
+        <div class="posts">
+          <div class="head">
+            <div class="item item-color">
+              <i class="fa-brands fa-hotjar"></i><span>hot</span>
+            </div>
+            <div class="item item-color">
+              <span>Everywhere<i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-sun"></i><span>New</span>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-angle-up"></i><span>Top</span>
+            </div>
+          </div>
+
+          <div class="post-container">
+            <div class="post-card">
+              <div class="votes">
+                <button class="up"><i class="fa-solid fa-angle-up"></i></button>
+                <span class="count">222K</span>
+                <button class="down">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+              <div class="post">
+                <div class="user">
+                  <img
+                    class="user-img"
+                    src="./assests/user-img.webp"
+                    alt="userimg"
+                  />
+                  <span class="username"> Mahmoud</span>
+                  <span class="time"> 15 hr </span>
+                </div>
+                <p class="post-content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nesciunt voluptatem quos deserunt ratione obcaecati ipsum
+                  accusamus quod modi
+                </p>
+                <img
+                  class="post-img"
+                  src="./assests/not-found-img.png"
+                  alt="post-img"
+                />
+              </div>
+            </div>
+            <div class="post-card">
+              <div class="votes">
+                <button class="up"><i class="fa-solid fa-angle-up"></i></button>
+                <span class="count">222K</span>
+                <button class="down">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+              <div class="post">
+                <div class="user">
+                  <img
+                    class="user-img"
+                    src="./assests/user-img.webp"
+                    alt="userimg"
+                  />
+                  <span class="username"> Mahmoud</span>
+                  <span class="time"> 15 hr </span>
+                </div>
+                <p class="post-content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nesciunt voluptatem quos deserunt ratione obcaecati ipsum
+                  accusamus quod modi
+                </p>
+                <img
+                  class="post-img"
+                  src="./assests/not-found-img.png"
+                  alt="post-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.profile-name{
+
+   margin: 5px; 
+}
+
+
+.delete-btn{
+border-radius: 30%;
+width: 10%;
+margin: 5px; 
+color: black;
+border: none;
+}
