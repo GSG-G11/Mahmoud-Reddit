@@ -17,8 +17,8 @@ router.route('/logout').get(logOut);
 router.route('/profileRender').get(checkAuthentication, getUserPost);
 
 router.route('/homeRender').get(getAllPost);
-router.get('/home', homePage);
-router.get('/profile', checkAuthentication, profilePage);
+router.route('/home').get(checkAuthentication, homePage);
+router.route('/profile').get(checkAuthentication, profilePage);
 router.route('/delete/:id').delete(checkAuthentication, deletePost);
 router.use(clientError);
 router.use(serverError);
